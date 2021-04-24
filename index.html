@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="destinationstyle.css" />
+    <title>Vacation Destinations Wishlist</title>
+  </head>
+  <body>
+    <div class="bg-light p-5">
+      <div class="container text-center">
+        <h1 class="display-3">Vacation Destinations Wishlist</h1>
+        <p class="lead">
+          Found exciting places to visit on your next vacation?
+        </p>
+        <p>Use the form below to add them to your wishlist!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <form id="destination_details">
+            <div class="form-group te">
+              <label for="name">Destination Name</label>
+              <input
+                type="text"
+                id="name"
+                min="2"
+                class="form-control"
+                placeholder="Enter the name of the Destination"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input
+                type="text"
+                id="location"
+                min="2"
+                class="form-control"
+                placeholder="Where is it located?"
+                required
+              />
+            </div>
+            <!-- <div class="form-group">
+              <label for="photo">Photo</label>
+              <input
+                type="url"
+                id="photo"
+                class="form-control"
+                placeholder="Enter an image URL"
+              />
+            </div> -->
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                type="text"
+                id="desc"
+                min="2"
+                class="form-control"
+                placeholder="Enter information about the destination"
+              ></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary my_btn">
+                Add to list
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-9 text-center">
+          <h5 id="cont_text">Enter the destination details</h5>
+          <div id="dest_container">
+            <!-- JS populates cards here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

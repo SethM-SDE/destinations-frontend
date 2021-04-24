@@ -1,0 +1,21 @@
+/* Make the #destinations_container content to display horizontally and wrap */
+#dest_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#cont_text {
+  text-align: center;
+}
+
+.buttons_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_btn {
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
