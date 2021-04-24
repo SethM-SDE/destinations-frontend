@@ -71,7 +71,7 @@ function handleFormSubmit(evnt) {
 function newDestinationCard(dest, loc, photo, desc) {
   // creates new container for card
   let container = document.createElement("div");
-  container.setAttribute("class", "card text-center");
+  container.setAttribute("class", "card text-center m-2");
   container.setAttribute("style", "width: 15rem; height: fit-content");
   // sets card picture in card to thumbnail in value returned from unsplash
   let pic = document.createElement("img");
